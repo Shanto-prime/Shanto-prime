@@ -1,8 +1,17 @@
 # Hi, I'm Shanto! 👋
 
-![Typing Animation](https://media.giphy.com/media/VggJrzfhWVmDi/giphy.gif)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=22&pause=1000&color=2E9EF7&center=false&vCenter=true&width=760&lines=Full-Stack+MERN+Developer;Building+Ecobazar+-+Live+E-Commerce+Platform;Based+in+Dhaka%2C+Bangladesh)](https://eco.shanto.dev/)
 
-Welcome to my GitHub profile! I'm a passionate software developer with a love for clean code and creative solutions. Here's a bit more about me:
+I build full-stack web platforms end-to-end — currently running **[Ecobazar](https://eco.shanto.dev/)**, a live organic grocery marketplace, from database to deployment.
+
+<p>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React"/>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" alt="Node.js"/>
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB"/>
+  <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" alt="Prisma"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
+</p>
 
 ## 🚀 About Me
 
