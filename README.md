@@ -6,7 +6,7 @@ Welcome to my GitHub profile! I'm a passionate software developer with a love fo
 
 ## 🚀 About Me
 
-- 🔭 I’m currently working on [Echo Bazar E-Commerce](https://eco.shanto.dev/)
+- 🔭 I’m currently working on [Ecobazar E-Commerce](https://eco.shanto.dev/)
 - 🌱 I’m currently learning **Web Development** (React, Node.js, etc.)
 - 👯 I’m looking to collaborate on **Open Source Projects**
 - 🤔 I’m looking for help with **Advanced JavaScript Concepts**
@@ -20,10 +20,11 @@ Here are some of the technologies and tools I use:
 
 ### Frontend
 - HTML5, CSS3
-- React, JavaScript
+- React, JavaScript, Next.js
 
 ### Backend
 - Node.js, Express.js
+- Prisma, NextAuth
 
 ### Database
 - MySQL, MongoDB
@@ -32,14 +33,27 @@ Here are some of the technologies and tools I use:
 - Git, GitHub
 - Docker, Netlify
 
+## 🌟 Featured Project — Ecobazar
+
+My best and most complete build so far: **Ecobazar**, a full-stack organic grocery e-commerce platform.
+
+- 🛒 Live store: **[eco.shanto.dev](https://eco.shanto.dev/)**
+- 💼 Portfolio write-up: **[shanto.dev](https://shanto.dev/)**
+- ⚙️ Built with Next.js 16, React 19, Prisma, MongoDB, and NextAuth v5
+- 📦 Role-based dashboards, concurrent stock management, and audit logging
+
 ## 📈 GitHub Stats
-![Shanto's GitHub Stats](https://github-readme-stats.vercel.app/api?username=jhs575&show_icons=true&hide_title=true&count_private=true&hide=prs)
+![Shanto's GitHub Stats](./assets/stats.svg)
+
+![Shanto's GitHub Streak](https://streak-stats.demolab.com/?user=Shanto-prime&theme=dark&hide_border=true)
 
 ## 🔗 Links
 
 - 🐦 [Twitter](https://x.com/shanto_prime)
 - 📱 [LinkedIn](https://linkedin.com/in/shanto-prime)
 - 🌐 [Personal Blog](https://notes.shanto.dev/)
+- 💼 [Portfolio](https://shanto.dev/)
+- 📘 [Facebook](https://facebook.com/shanto.primee)
 
 ## 🤝 Let's Connect!
 
