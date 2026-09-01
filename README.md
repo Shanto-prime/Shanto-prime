@@ -53,6 +53,7 @@ My best and most complete build so far: **Ecobazar**, a full-stack organic groce
 
 ## 📈 GitHub Stats
 ![Shanto's GitHub Stats](./assets/stats.svg)
+![Shanto's Top Languages](./assets/top-langs.svg)
 
 ![Shanto's GitHub Streak](https://streak-stats.demolab.com/?user=Shanto-prime&theme=dark&hide_border=true)
 
