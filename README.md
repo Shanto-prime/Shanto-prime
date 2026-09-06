@@ -52,10 +52,19 @@ My best and most complete build so far: **Ecobazar**, a full-stack organic groce
 - 📦 Role-based dashboards, concurrent stock management, and audit logging
 
 ## 📈 GitHub Stats
-![Shanto's GitHub Stats](./assets/stats.svg)
-![Shanto's Top Languages](./assets/top-langs.svg)
 
-![Shanto's GitHub Streak](https://streak-stats.demolab.com/?user=Shanto-prime&theme=dark&hide_border=true)
+<table>
+  <tr>
+    <td width="50%" valign="top"><img src="./assets/stats.svg" width="100%" alt="Shanto's GitHub Stats"/></td>
+    <td width="50%" valign="top"><img src="./assets/top-langs.svg" width="100%" alt="Shanto's Top Languages"/></td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="./assets/contributions.svg" alt="Total Contributions (last 365 days)"/>
+</p>
+
+<img src="https://streak-stats.demolab.com/?user=Shanto-prime&theme=dark&hide_border=true" width="100%" alt="Shanto's GitHub Streak"/>
 
 ## 🔗 Links
 
