@@ -1,8 +1,8 @@
 
       <svg
-        width="300"
+        width="280"
         height="345"
-        viewBox="0 0 300 345"
+        viewBox="0 0 280 345"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
@@ -100,7 +100,7 @@
           rx="4.5"
           height="99%"
           stroke="#e4e2e2"
-          width="299"
+          width="279"
           fill="#fffefe"
           stroke-opacity="1"
         />
