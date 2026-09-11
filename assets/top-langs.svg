@@ -8,7 +8,7 @@
   aria-labelledby="descId"
 >
   <title id="titleId">Most Used Languages</title>
-  <desc id="descId">JavaScript: 69.61%, HTML: 19.22%, CSS: 8.04%, PHP: 1.64%, Hack: 1.30%, C++: 0.18%</desc>
+  <desc id="descId">JavaScript: 69.62%, HTML: 19.21%, CSS: 8.04%, PHP: 1.64%, Hack: 1.30%, C++: 0.18%</desc>
   <style>
     .lang-name {
       font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif;
@@ -21,21 +21,21 @@
     stroke="#e4e2e2" fill="#fffefe" stroke-opacity="1"
   />
   <g data-testid="lang-donut-ring">
-    <circle cx="350" cy="103.5" r="68" fill="none" stroke="#f1e05a" stroke-width="4" stroke-dasharray="297.413 129.843" transform="rotate(-90.000 350 103.5)" />
-    <circle cx="350" cy="103.5" r="68" fill="none" stroke="#e34c26" stroke-width="4" stroke-dasharray="82.119 345.138" transform="rotate(160.596 350 103.5)" />
-    <circle cx="350" cy="103.5" r="68" fill="none" stroke="#663399" stroke-width="4" stroke-dasharray="34.351 392.905" transform="rotate(229.788 350 103.5)" />
-    <circle cx="350" cy="103.5" r="68" fill="none" stroke="#4F5D95" stroke-width="4" stroke-dasharray="7.007 420.250" transform="rotate(258.732 350 103.5)" />
-    <circle cx="350" cy="103.5" r="68" fill="none" stroke="#878787" stroke-width="4" stroke-dasharray="5.554 421.702" transform="rotate(264.636 350 103.5)" />
-    <circle cx="350" cy="103.5" r="68" fill="none" stroke="#f34b7d" stroke-width="4" stroke-dasharray="0.769 426.488" transform="rotate(269.316 350 103.5)" />
+    <circle cx="350" cy="103.5" r="68" fill="none" stroke="#f1e05a" stroke-width="10" stroke-dasharray="297.456 129.801" transform="rotate(-90.000 350 103.5)" />
+    <circle cx="350" cy="103.5" r="68" fill="none" stroke="#e34c26" stroke-width="10" stroke-dasharray="82.076 345.181" transform="rotate(160.632 350 103.5)" />
+    <circle cx="350" cy="103.5" r="68" fill="none" stroke="#663399" stroke-width="10" stroke-dasharray="34.351 392.905" transform="rotate(229.788 350 103.5)" />
+    <circle cx="350" cy="103.5" r="68" fill="none" stroke="#4F5D95" stroke-width="10" stroke-dasharray="7.007 420.250" transform="rotate(258.732 350 103.5)" />
+    <circle cx="350" cy="103.5" r="68" fill="none" stroke="#878787" stroke-width="10" stroke-dasharray="5.554 421.702" transform="rotate(264.636 350 103.5)" />
+    <circle cx="350" cy="103.5" r="68" fill="none" stroke="#f34b7d" stroke-width="10" stroke-dasharray="0.769 426.488" transform="rotate(269.316 350 103.5)" />
   </g>
   <g data-testid="lang-legend">
     <g transform="translate(25, 30)">
       <circle cx="5" cy="6" r="5" fill="#f1e05a" />
-      <text x="16" y="10.5" class="lang-name">JavaScript 69.61%</text>
+      <text x="16" y="10.5" class="lang-name">JavaScript 69.62%</text>
     </g>
     <g transform="translate(25, 60)">
       <circle cx="5" cy="6" r="5" fill="#e34c26" />
-      <text x="16" y="10.5" class="lang-name">HTML 19.22%</text>
+      <text x="16" y="10.5" class="lang-name">HTML 19.21%</text>
     </g>
     <g transform="translate(25, 90)">
       <circle cx="5" cy="6" r="5" fill="#663399" />
