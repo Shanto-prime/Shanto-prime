@@ -13,12 +13,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate stats card
+      - name: Fetch stats data (for the rank grade)
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&hide_title=true&count_private=true&line_height=32
-          path: assets/stats.svg
+          path: assets/.stats-raw.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
 
@@ -58,15 +58,15 @@ jobs:
 
           echo "$RESPONSE" > assets/.contribution-calendar.json
 
-      - name: Render contribution streak card
-        run: node scripts/render-streak.mjs assets/.contribution-calendar.json assets/streak.svg
+      - name: Render grade + streak bar
+        run: node scripts/render-streak.mjs assets/.stats-raw.svg assets/.contribution-calendar.json assets/streak.svg
 
       - name: Commit card
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          rm -f assets/.top-langs-raw.svg assets/.contribution-calendar.json assets/contributions.svg
-          git add assets/stats.svg assets/top-langs.svg assets/streak.svg
+          rm -f assets/.stats-raw.svg assets/.top-langs-raw.svg assets/.contribution-calendar.json assets/contributions.svg assets/stats.svg
+          git add assets/top-langs.svg assets/streak.svg
           git add -u assets/
           git commit -m "Update README stats card" || exit 0
           git push

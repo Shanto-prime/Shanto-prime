@@ -37,7 +37,7 @@ const LEGEND_X = 25;
 const DONUT_CX = 350;
 const DONUT_CY = HEIGHT / 2;
 const DONUT_R = 68;
-const RING_WIDTH = 4;
+const RING_WIDTH = 10;
 
 const circumference = 2 * Math.PI * DONUT_R;
 let cumulativePercent = 0;
