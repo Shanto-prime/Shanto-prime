@@ -22,16 +22,19 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
 
-      - name: Generate top languages card
+      - name: Fetch top languages data
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&hide_title=true&layout=pie
-          path: assets/top-langs.svg
+          options: username=${{ github.repository_owner }}&hide_title=true&layout=donut&langs_count=6
+          path: assets/.top-langs-raw.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
 
-      - name: Generate total contributions (last 365 days) badge
+      - name: Render top languages as a donut card
+        run: node scripts/render-top-langs.mjs assets/.top-langs-raw.svg assets/top-langs.svg
+
+      - name: Fetch contribution calendar (last 365 days)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LOGIN: ${{ github.repository_owner }}
@@ -39,7 +42,7 @@ jobs:
           FROM=$(date -u -d '-365 days' +%Y-%m-%dT%H:%M:%SZ)
           TO=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 
-          QUERY='query($login:String!,$from:DateTime!,$to:DateTime!){user(login:$login){contributionsCollection(from:$from,to:$to){contributionCalendar{totalContributions}}}}'
+          QUERY='query($login:String!,$from:DateTime!,$to:DateTime!){user(login:$login){contributionsCollection(from:$from,to:$to){contributionCalendar{totalContributions weeks{contributionDays{date contributionCount color}}}}}}'
           PAYLOAD=$(jq -n --arg q "$QUERY" --arg login "$LOGIN" --arg from "$FROM" --arg to "$TO" \
             '{query:$q, variables:{login:$login, from:$from, to:$to}}')
 
@@ -49,17 +52,21 @@ jobs:
           TOTAL=$(echo "$RESPONSE" | jq -r '.data.user.contributionsCollection.contributionCalendar.totalContributions')
 
           if ! [[ "$TOTAL" =~ ^[0-9]+$ ]]; then
-            echo "Failed to fetch total contributions. Response: $RESPONSE"
+            echo "Failed to fetch contribution calendar. Response: $RESPONSE"
             exit 1
           fi
 
-          curl -s "https://img.shields.io/badge/Total%20Contributions%20%28last%20365%20days%29-${TOTAL}-2E9EF7?style=flat-square&labelColor=0d1117" \
-            -o assets/contributions.svg
+          echo "$RESPONSE" > assets/.contribution-calendar.json
+
+      - name: Render contribution streak card
+        run: node scripts/render-streak.mjs assets/.contribution-calendar.json assets/streak.svg
 
       - name: Commit card
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/stats.svg assets/top-langs.svg assets/contributions.svg
+          rm -f assets/.top-langs-raw.svg assets/.contribution-calendar.json assets/contributions.svg
+          git add assets/stats.svg assets/top-langs.svg assets/streak.svg
+          git add -u assets/
           git commit -m "Update README stats card" || exit 0
           git push
