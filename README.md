@@ -55,8 +55,8 @@ My best and most complete build so far: **Ecobazar**, a full-stack organic groce
 
 <table>
   <tr>
-    <td width="50%" valign="top"><img src="./assets/stats.svg" width="100%" alt="Shanto's GitHub Stats"/></td>
-    <td width="50%" valign="top"><img src="./assets/top-langs.svg" width="100%" alt="Shanto's Top Languages"/></td>
+    <td width="50%" align="center" valign="middle"><img src="./assets/stats.svg" height="260" alt="Shanto's GitHub Stats"/></td>
+    <td width="50%" align="center" valign="middle"><img src="./assets/top-langs.svg" height="260" alt="Shanto's Top Languages"/></td>
   </tr>
 </table>
 
