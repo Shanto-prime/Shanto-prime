@@ -21,7 +21,6 @@ I build full-stack web platforms end-to-end — currently running **[Ecobazar](h
 - 🤔 I’m looking for help with **Advanced JavaScript Concepts**
 - 💬 Ask me about **Web Development**, **Python**, or **Machine Learning**
 - 📫 How to reach me: [contact@shanto.dev](mailto:contact@shanto.dev)
-- ⚡ Fun fact: **I love solving complex problems and solving puzzles!**
 
 ## 🛠️ My Tech Stack
 
@@ -33,8 +32,7 @@ Here are some of the technologies and tools I use:
 
 ### Backend
 - Node.js, Express.js
-- Prisma, NextAuth
-
+- Prisma, NextAuth.
 ### Database
 - MySQL, MongoDB
 
