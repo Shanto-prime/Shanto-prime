@@ -8,7 +8,7 @@
   aria-labelledby="descId"
 >
   <title id="titleId">GitHub Contribution Streak</title>
-  <desc id="descId">Grade: B-. Total contributions (last 365 days): 535. Current streak: 18 days. Longest streak: 19 days.</desc>
+  <desc id="descId">Grade: B-. Total contributions (last 365 days): 535. Current streak: 0 days. Longest streak: 19 days.</desc>
   <style>
     .stat-value { font: 700 22px 'Segoe UI', Ubuntu, Sans-Serif; fill: #2f80ed; }
     .stat-label { font: 600 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #434d58; }
@@ -35,7 +35,7 @@
     </g>
   
     <g transform="translate(442, 40)">
-      <text x="0" y="30" text-anchor="middle" class="stat-value">18</text>
+      <text x="0" y="30" text-anchor="middle" class="stat-value">0</text>
       <text x="0" y="50" text-anchor="middle" class="stat-label">Current Streak (days)</text>
     </g>
   
